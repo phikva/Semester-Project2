@@ -1,0 +1,166 @@
+.nav {
+  position: fixed;
+  // // top: 0;
+  // display: flex;
+  // margin: 0 auto;
+  z-index: 1;
+  // // width: 100%;
+  // // height: 10vh;
+
+  
+    a {
+      color: $colour-primary;
+      transition: 0.5s ease-out;
+    }
+    a:hover {
+      color: $colour-primary-background;
+      transition: all 0.5s ease-out;
+    }
+    .active {
+      color: $colour-primary-background;
+    }
+  }
+
+  .nav-footer {
+    background: $colour-secondary;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  }
+
+.cart-total {
+  margin-top: 12em;
+  color: $colour-primary-background;
+}
+.nav_links {
+  display: flex;
+  
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translate3d(100%, 0, 0);
+  text-align: center;
+  visibility: hidden;
+  li {
+    transform: translate3d(600px, 0, 0);
+  }
+ 
+}
+
+
+.nav_links.show li {
+  transform: translate3d(0, 0, 0);
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+
+.nav_links.show {
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  background-color: black;
+  flex-flow: column wrap;
+  justify-content: center;
+  transform: translate3d(0, 0, 0);
+  width: 100%;
+  padding-top: 5em;
+  padding-left: 1em;
+  visibility: visible;
+  align-items: flex-start;
+  // justify-content: space-around;
+
+  
+
+  li:nth-child(1) {
+    transition-delay: 0.2s;
+
+  }
+  li:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+  li:nth-child(3) {
+    transition-delay: 0.4s;
+  }
+  li:nth-child(4) {
+    transition-delay: 0.5s;
+  }
+
+
+}
+footer {
+  position: relative;
+    bottom: 0;
+    width: 100%;
+    .footer-content {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding-top: 10px;
+      
+    }
+    .copyright-text,
+    .homepage-text a, p {
+        color: $colour-primary-background;
+
+    }
+    margin-top: 5em;
+    .nav {
+        height: 150px;
+    }
+    .nav_links-footer {
+      a {
+        text-decoration: none;
+        color: $colour-primary;
+      }
+        width: 20%;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+
+
+
+.footer-product-detail {
+  position: relative;
+  bottom: 0;
+}
+
+
+.footer-cart {
+    margin-top: 10em;
+}
+
+@media screen and (min-width: 768px) {
+   .nav_links {
+    all: unset;
+  }
+  .menu-btn {
+    display: none;
+  }
+  
+  .nav {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+   
+    .nav_links {
+      margin-left: -15em;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      
+    }
+    li {
+      padding: 1em;
+      
+    }
+  }
+ 
+
+}

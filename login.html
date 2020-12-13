@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line" id="offset-line"></div>
+      <div class="btn-line"></div>
+    </div>
+    <i class="fas fa-shoe-prints fa-2x"></i>
+    <div class="container login">
+      <div class="nav">
+        <ul class="nav_links"></ul>
+      </div>
+
+      <form class="login-page">
+        <div class="row">
+            <div class="col-25">
+        <h1>Login</h1>
+    </div>
+        </div>
+        <div class="message-container"></div>
+
+        <div class="row">
+            <div class="col-25">
+          <label for="username">Username/Email</label>
+        </div>
+        <div class="col-75">
+          <input id="username" />
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-75">
+          <input id="password" type="password" />
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+        <button>Login</button>
+            </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="./js/login.js" type="module"></script>
+    <script src="./js/components/hamburgerMenu.js" type="module"></script>
+  </body>
+</html>

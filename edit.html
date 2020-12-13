@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line" id="offset-line"></div>
+      <div class="btn-line"></div>
+    </div>
+  <i class="fas fa-shoe-prints fa-2x"></i>
+    <div class="container">
+      <div class="nav">
+     
+        <ul class="nav_links"></ul>
+      </div>
+      <button type="button" class="btn back">
+        <a href="products.html#products">Back to products</a>
+      </button>
+      <h1>Edit Product</h1>
+      <form class="edit-form">
+        <div class="message-container"></div>
+
+      
+
+        <div>
+          <label for="name">name</label>
+          <input id="name" />
+        </div>
+        <div>
+          <label for="url">Image URL</label>
+          <input type="url" id="url"/>
+        </div>
+        
+        <div>
+            <label for="featured">Featured, write only false/true</label>
+            <input type="text" id="featured" />
+          </div>
+        <div>
+          <label for="price">Price</label>
+          <input id="price" />
+        </div>
+        <div>
+          <label for="description">Description</label>
+          <textarea id="description"> </textarea>
+        </div>
+
+        <input type="hidden" id="id" />
+
+        <div>
+          <button type="submit" id="id" class="btn">Update</button>
+        </div>
+        <div class="delete-container">
+
+        </div>
+      </form>
+      
+    </div>
+    <!-- <script src="./js/login.js" type="module"></script> -->
+    <script src="./js/editProducts.js" type="module"></script>
+    <script src="./js/components/hamburgerMenu.js" type="module"></script>
+  </body>
+</html>
