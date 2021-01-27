@@ -25,12 +25,14 @@ const productUrl = baseUrl + "products/" + id;
    
 
     const listItems = getFromStorage("list");
+  
     const doesObjectExist = listItems.find(function(product) {
       
       return parseInt(product.id) === details.id
     });
     
     console.log("doesObjectExist", doesObjectExist)
+    
 
   
     

@@ -24,12 +24,12 @@ p {
 }
 .fas{
   z-index: 11;
- padding-top: 10px;
+ padding-top: 1px;
  padding-left: 10px;
  position: fixed;
  top: 10px;
- color:$colour-secondary;
-visibility: hidden;
+ color:$colour-primary;
+// visibility: hidden;
 
 }
 .btn.back {

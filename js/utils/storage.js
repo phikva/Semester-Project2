@@ -30,13 +30,14 @@ export function saveToStorage(key, value) {
 
 export function getFromStorage(key) {
     const value = localStorage.getItem(key);
-    console.log(value)
+    // console.log(value)
 
     if(!value) {
-        return null;
+        return [];
     }
         return JSON.parse(value);
     
 
     
 }
+

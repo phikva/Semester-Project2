@@ -25,39 +25,7 @@ function submitForm(event) {
     message.innerHTML = "";
     
 
-    // Code from: https://strapi.io/documentation/3.0.0-beta.x/plugins/upload.html#upload-file-during-entry-creation
-    const request = new XMLHttpRequest();
-    const formData = new FormData();
-    const formElements = form.elements;
-    
-    
-    const data = {};
-    for (let i = 0; i < formElements.length; i++) {
-      const currentElement = formElements[i];
-      if (!['submit', 'file'].includes(currentElement.type)) {
-        data[currentElement.name] = currentElement.value;
-      } else if (currentElement.type === 'file') {
-        if (currentElement.files.length === 1) {
-          const file = currentElement.files[0];
-          formData.append(`files.${currentElement.name}`, file, file.name);
-        } else {
-          for (let i = 0; i < currentElement.files.length; i++) {
-            const file = currentElement.files[i];
-
-            formData.append(`files.${currentElement.name}`, file, file.name);
-           
-          }
-        }
-      }
-      
-    }
    
-    formData.append('data', JSON.stringify(data));
-
-    request.open('POST', `http://localhost:1337/resturants`);
-
-    request.send(formData);
-    //
     
     const titleValue = title.value.trim();
     const priceValue = parseFloat(price.value);

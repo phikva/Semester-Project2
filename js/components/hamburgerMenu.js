@@ -17,7 +17,6 @@ function toggleMenu() {
     menuBtn.classList.add("close");
     menu.classList.add("show");
     menuNav.classList.add("show");
-    logo.style.color = "white";
     logo.style.display ="show";
     navItem.forEach((item) => item.classList.add("show"));
 
